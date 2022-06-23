@@ -1,3 +1,6 @@
+"""FastAPI is a blazing fast, simple, and flexible API Framework for Python."""
+
+
 from fastapi import FastAPI
 from enum import Enum
 
