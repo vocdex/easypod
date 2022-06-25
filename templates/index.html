@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Basic UI for the EasyPod"
+    />
+    <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
+    <meta name="author" content="PPType" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>EasyPod</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      type="text/css"
+    />
+    <style type="text/css">
+      html {
+        position: relative;
+        min-height: 100%;
+        height: unset;
+      }
+
+      body {
+        padding-bottom: 14px;
+        margin-bottom: 60px;
+        padding-top: 36px;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: grayscale;
+      }
+
+      .ui.container h1.ui.huge.header {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        margin-top: 40px;
+        font-size: 36px;
+      }
+
+      .ui.borderless.menu {
+        background-color: #f8f8f8;
+        box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15);
+        flex-wrap: wrap;
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .ui.borderless.menu .header.item {
+        font-size: 18px;
+        font-weight: 400;
+        padding-left: 50px;
+        padding-right: 50px;
+
+      }
+
+      .ui.container.grid h1.ui.header {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        margin-top: 40px;
+        font-size: 36px;
+      }
+
+      .ui.tablet.computer.only.padded.grid .ui.menu a.header.item {
+        font-size: 18px;
+        font-weight: 400;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+        display: none;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        background-color: #f5f5f5;
+      }
+
+      footer p {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #777777;
+      }
+
+      p.lead {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 21px;
+        color: #333333;
+        line-height: 1.4;
+        font-weight: 300;
+      }
+    </style>
+  </head>
+
+  <body id="root">
+    <div class="ui tablet computer only padded grid">
+      <div class="ui top fixed borderless huge menu">
+        <div class="ui container">
+          <a class="header item">EasyPod</a><a class="item">About</a>
+          <a class="item">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="ui mobile only grid">
+      <div class="ui top fixed borderless huge menu">
+        <a class="header item">EasyPod</a>
+        <div class="right menu">
+          <div class="item">
+            <button class="ui icon toggle basic button">
+              <i class="content icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="ui vertical borderless fluid menu">
+            <a class="header item">EasyPod</a><a class="item">About</a>
+            <a class="item">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="ui container">
+      <h1 class="ui dividing huge header">EasyPod</h1>
+      <p class="lead">
+        EasyPod for audio transcription, audio editing and synthesizing.
+      </p>
+    </div>
+    <footer>
+      <div class="ui container"><p>Easypod 2022.</p></div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".ui.toggle.button").click(function() {
+          $(".mobile.only.grid .ui.vertical.menu").toggle(100);
+        });
+      });
+    </script>
+  </body>
+</html>
